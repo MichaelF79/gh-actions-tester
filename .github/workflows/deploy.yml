@@ -1,0 +1,20 @@
+name: Deploy
+
+# When to run?
+on:
+  pull_request:
+    branches:
+      - main
+
+# What jobs to do?  
+jobs:
+  test:
+    name: Deploy
+    runs-on: ubuntu-latest    
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Install dependencies
+        run: npm install
+      - name: Deploy code
+        run: npm run deploy

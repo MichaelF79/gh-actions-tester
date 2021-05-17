@@ -1,4 +1,4 @@
-import { sumTwoNum } from "./main.js";
+import { sumTwoNum } from "./dist/main.js";
 
 describe("sumTwoNum tests", () => {
   it("shouldadd two numbers together", () => {
