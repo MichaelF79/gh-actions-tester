@@ -1,0 +1,23 @@
+name: Deploy
+
+# When to run?
+on:
+  pull_request:
+    branches:
+      - main
+
+# What jobs to do?  
+jobs:
+  test:
+    name: Deploy
+    runs-on: ubuntu-latest    
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Install dependencies
+        run: npm install
+      - name: Deploy code
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
