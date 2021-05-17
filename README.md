@@ -1,2 +1,2 @@
 # gh-actions-tester
-A palce to test some GitHub Actions
+A place to test some GitHub Actions
