@@ -1,0 +1,27 @@
+{
+  "name": "gh-actions-tester",
+  "version": "1.0.0",
+  "description": "A palce to test some GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelF79/gh-actions-tester.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelF79/gh-actions-tester/issues"
+  },
+  "homepage": "https://github.com/MichaelF79/gh-actions-tester#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babel-jest": "^26.6.3",
+    "gh-pages": "^3.1.0",
+    "jest": "^26.6.3"
+  }
+}
